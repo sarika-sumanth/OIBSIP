@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tempConv</title>
+    <link rel="stylesheet" href="TempConvStyles.css">
+</head>
+<body>
+    <div class="container">
+      <div class="block">
+        <h1>Please enter a number to convert to different units</h1>
+
+        <input type="number" id="fahrenheit" placeholder="Fahrenheit temperature" />
+
+        <input type="number" id="celsius" placeholder="Celsius temperature" /><br>
+
+        <div class="buttons"><button id="convert" onclick="tempConvert()">Convert</button>
+        <button id="reset" onclick="clearForm()">Reset</button>  
+        </div>
+      </div>
+    </div>
+
+
+    <script>
+
+function tempConvert() {
+    
+    var fah = document.getElementById("fahrenheit").value;
+    var cel = document.getElementById("celsius").value;
+    if (fah != '') {
+        cel = (parseFloat(fah) - 32) / 1.8;
+    } else {
+        fah = (parseFloat(cel) * 1.8) + 32;
+    }
+    document.getElementById('fahrenheit').value = parseFloat(fah).toFixed(1);
+    document.getElementById('celsius').value = parseFloat(cel).toFixed(1);
+}
+
+
+function clearForm() {
+    document.getElementById('fahrenheit').value = '';
+    document.getElementById('celsius').value = '';
+}
+    </script>
+</body>
+</html>

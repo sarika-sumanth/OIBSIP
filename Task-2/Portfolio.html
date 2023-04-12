@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head >
+<link rel="stylesheet" href="PFStyles.css">
+<title>My profile</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://kit.fontawesome.com/2ebab2d72e.js" crossorigin="anonymous"></script>
+</head>
+
+<meta charset="utf-8"/>
+
+<body>
+<div class="all">
+<div id="background1">
+
+  <div class="container">
+  <nav>
+   <img src="Images/shopping-cart.png">
+   <ul id="sidemenu">
+    <li><a href="#background1">Home</a></li>
+    <li><a href="#About">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <!-- <li><a href="#my-work">Work</a></li> -->
+    <li><a href="#contact">Contact</a></li>
+    <i class="fa-sharp fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+   </ul>
+   <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+  </nav> 
+
+  <div class="block">
+    Hi, my name is sumanth and<br>
+  I am a <span>programmer</span>.
+  </div>
+  </div>
+  
+</div>
+
+<div id="About">
+   <div class="container2">
+    <div class="row">
+      <div class="col-1">
+        <img src="Images/Me.jpg">
+      </div>
+      <div class="col-2">
+        <h1 class="sub-title">About me</h1><br>
+         <p>My name is sumanth. I am currently pursuing bachelors degree in cse from SRM University.</p>
+         <div class="tab-titles">
+          <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+          <p class="tab-links" onclick="openTab('experience')    ">Experience</p>
+          <p class="tab-links" onclick="openTab('education')">Education</p>
+        </div>
+        <div class="tab-content active-tab" id="skills">
+          <ul>
+            <li>Web Development</li>
+            <li>Python</li>
+            <li>C++</li>
+            <li>Mysql</li>
+            <li>AI/ML</li>
+          </ul>
+        </div>
+        <div class="tab-content" id="experience">
+          <ul>
+            <li>Web Development for 6 months</li>
+            <li>No industrial experience</li>
+            
+          </ul>
+        </div>
+        <div class="tab-content" id="education">
+          <ul>
+            <li><b>2020-2024</b><br>
+              <br>Bachelor's degree<br>
+              College name: SRM University<br>
+              Place: Amaravati
+              
+              <br><br><br>
+            </li>
+            <li><b>2018-2020</b><br><br>
+              Intermediate<br>
+              College name: Resonance Junior college<br>
+              Place: Khammam<br>
+              Passed with an aggregate of 94.3%</li>
+              <br><br>
+            <li><b>2017-2018</b><br>
+              <br>High School Degree <br>
+              School name: Resonance Info school<br>
+              Place: Khammam <br>
+              Passed with an aggregate of 88% <br>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+   </div>
+</div>
+
+<div id="services">
+  <div class="container">
+    <h1 class="sub-title">My services</h1>
+    <div class="services-list">
+      <div>
+        <i class="fa-sharp fa-solid fa-code"></i>
+        <h2>Web Design</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, laborum illo! Voluptate corrupti cupiditate illo autem, sapiente error placeat in perferendis, incidunt nisi quae rem eaque. Odit obcaecati rem nostrum corporis officia?</p>
+        <a href="#">Learn more</a>
+      </div>
+      <div>
+        <i class="fa-sharp fa-solid fa-crop-simple"></i>
+        <h2>UI/UX Design</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, laborum illo! Voluptate corrupti cupiditate illo autem, sapiente error placeat in perferendis, incidunt nisi quae rem eaque. Odit obcaecati rem nostrum corporis officia?</p>
+        <a href="#">Learn more</a>
+      </div>
+      <div>
+        <i class="fa-brands fa-app-store-ios"></i>
+        <h2>App Design</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, laborum illo! Voluptate corrupti cupiditate illo autem, sapiente error placeat in perferendis, incidunt nisi quae rem eaque. Odit obcaecati rem nostrum corporis officia?</p>
+        <a href="#">Learn more</a>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div id="my-work">
+  <div class="container">
+    <h2 class="sub-title">My work</h2>
+    <div class="work-list">
+      <div class="work">
+        <img src="Images/burger.png" alt="">
+        <div class="layer">
+          <h3>Music app</h3>
+          <p>
+            A musical app for all feelings.
+          </p>
+          <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="Images/cappuccino.png" alt="">
+        <div class="layer">
+          <h3>Social media</h3>
+          <p>
+            Connects people around the world.
+          </p>
+          <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="Images/OreoDessert.png" alt="">
+        <div class="layer">
+          <h3>Shopping app</h3>
+          <p>
+            Makes shopping easy and fun.
+          </p>
+          <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div href="#" class="btn">
+     <p>See more</p>
+  </div>
+</div>
+
+
+<div id="contact">
+  <div class="container">
+    <p class="sub-title">Contact</p>
+    <div class="row">
+      <div class="contact-info">
+        <p><i class="fa-solid fa-envelope"></i>sarikasumanth168@gmail.com</p>
+        <p><i class="fa-sharp fa-solid fa-phone"></i>7396956566</p>
+        <div class="social-media">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-linkedin"></i>
+          <i class="fa-brands fa-instagram"></i>
+        </div>
+
+      </div>
+      <div class="message">
+        <form name="submit-to-google-sheet">
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <input type="email" name="Email" placeholder="Your Email" required>
+          <textarea type="textarea" rows="10" name="Message" placeholder="Message" required></textarea>
+          <button type="submit">Submit</button>
+        </form>
+        <span id="msg"></span>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="copyright">
+  <p>copyright &copy ss</p>
+</div>
+
+
+<script>
+
+  var tabLink=document.getElementsByClassName("tab-links");
+  var tabContent=document.getElementsByClassName("tab-content");
+
+  function openTab(tabname){
+    for(tl of tabLink)
+    {
+      tl.classList.remove("active-link");
+    }
+
+    for(tc of tabContent)
+    {
+      tc.classList.remove("active-tab");
+    }
+    
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+
+  }
+
+</script>
+
+<script>
+  var sidemenu=document.getElementById("sidemenu");
+  function openmenu()
+  {
+    sidemenu.style.right="0px";
+  }
+
+  function closemenu(){ 
+    sidemenu.style.right="-200px";
+  }
+</script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwMiXpkV7XhSUnkma8C4bAwJni_J5ETRO6O1Amv6clgWspTl5_pHAwXdNUm-TGgnDb-/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg=document.getElementById("msg");
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => { msg.innerHTML="Message sent successfully." 
+      setTimeout(function(){
+        msg.innerHTML=""
+      },5000)
+      form.reset()})
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+</body>
+</html>

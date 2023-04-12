@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodie</title>
+    <link rel="stylesheet" href="FoodStyles.css">
+</head>
+
+<body>
+    
+    <div class="nav" id="nav">
+        <a href="javascript:void(0)" class="close" onclick="closeNav()">&times;</a>
+        <a href="#">My profile</a>  
+        <a href="#">My orders</a>
+        <a href="#">Address book</a>
+        <a href="#">Help</a>
+        <a href="#">About us</a>
+        <a href="#">Logout</a>
+    
+     </div>
+<div class="background">
+    <div class="titleCard">
+        <div class="inner">
+            <nav>
+              <img  id="hamBurger" src="Images/hamburger.png" >
+              <h1><span>PLEASURE &nbsp</span>Try it <br>to know the best</h1>
+              <ul>
+                  <li><a href="#"> <img class="cart" src="Images/shopping-cart.png"></a></li>
+                  <li><a id="open" class="dashes" onclick="openNav()">&#9776</a></li>
+              </ul>
+            </nav>
+            <pre style="color:white">  <b>SS</b></pre>
+          </div>         
+    </div>
+    <img src="Images/fastfood2.jpg" class="banner">
+    <div class="menuBackGround">
+        <a class="menu"href="#menu" id="menu" onclick="dropDown()" ><b>MENU</b></a>
+            <ol id="categories">
+             <div class="items">
+               <div><a href="#BW" > <li>Burgers and Wraps</li></a></div>
+               <div><a href="#Pizza" > <li>Pizza</li></a></div>
+               <div><a href="#Muffins" > <li>Muffins</li></a></div>
+               <div><a href="#Fries" > <li>Fries</li></a></div>
+               <div><a href="#Beverages" > <li>Beverages</li></a></div>
+               <div><a href="#Desserts" > <li>Desserts</li></a></div>
+               <div><a href="#Coffee&Tea" > <li>Coffee and Tea</li></a></div>
+               <div><a href="#Shakes" > <li>Shakes</li></a></div>
+               </div>
+            </ol>
+            <div class="grid-container">
+                <h2 id="BW">Burgers and wraps</h2><br>
+                <div>
+                    <img src="Images/chickenKebabB.png " >
+                    <img src="Images/cornNdCheeseB.png">
+                    <img src="Images/wrap-1.png" >
+                    <img src="Images/wrap-2.png" >    
+                </div><br>
+            
+                <div class="add">Add+</div><br><br>
+            
+                <h2 id="Pizza">Pizza</h2><br>
+                <div>
+                    <img src="Images/MexicanGWP.png" >
+                    <img src="Images/IndiTPP.png">
+                    <img src="Images/DeluxeVP.png">
+                    <img src="Images/pizza-1.png">
+                </div><br>
+            
+                <div class="add">Add+</div><br><br>
+            
+            
+                <h2 id="Muffins">Muffins</h2><br>
+                <div>
+                    <img src="Images/VCMuffins.png">
+                    <img src="Images/CCMuffins.png">
+                    <img src="Images/BBCCake.png">
+                    <img src="Images/muffin-1.png">
+                </div><br>
+            
+                
+                <div class="add">Add+</div><br><br>
+            
+            
+                <h2 id="Fries">Fries</h2><br>
+                <div>
+                    <img src="Images/DFFrenchFries.png">
+                    <img src="Images/GDFrenchFries.png">
+                    <img src="Images/CurlyFrenchFries.png">
+                    <img src="Images/fries-1.png">
+
+            
+                </div><br>
+            
+                <div class="add">Add+</div><br><br>
+            
+            
+                <h2 id="Desserts">Desserts</h2><br>
+                <div>
+                    <img src="Images/BlackForest.png">
+                    <img src="Images/OreoDessert.png">
+                    <img src="Images/BrowniHotFudge.png">
+                    <img src="Images/dessert-1.png">
+            
+                </div><br>
+            
+                <div class="add">Add+</div><br><br>
+            
+            
+                <h2 id="Coffee&Tea">Coffee and Tea</h2><br>
+                <div>
+                    <img src="Images/cappuccino.png">
+                    <img src="Images/StrawberryGrnTea.png">
+                    <img src="Images/HotChocolate.png">
+                    <img src="Images/coffee.png" >
+
+                </div><br>
+            
+                <div class="add">Add+</div><br><br>
+            
+                <h2 id="Beverages">Beverages</h2><br>
+                <div>
+                    <img src="Images/beverage-1.png" >
+                    <img src="Images/Coke.png">
+                    <img src="Images/Sprite.png">
+                    <img src="Images/MixedFruit.png">
+                    
+                </div><br>
+            
+                <div class="add">Add+</div><br><br>
+            
+            
+                <h2 id="Shakes">Shakes</h2><br>
+                <div>
+                    <img src="Images/shake-2.png" >
+                    <img src="Images/MangoSmoothie.png">
+                    <img src="Images/GreenAppleChiller.png">
+                    <img src="Images/shake-1.png" >
+                    
+
+
+                </div><br>
+            
+                <div class="add">Add+</div><br><br>
+            
+            </div>
+            <div class="tq">
+                <h1>Thank you and <br> Enjoy the tasty food</h1>
+            </div>
+    </div>  
+    
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    function openNav()
+    {
+        document.getElementById("open").style.display="none";
+        document.getElementById("nav").style.width="25%";
+    }
+
+    function closeNav()
+    {
+        document.getElementById("nav").style.width="0";
+        document.getElementById("open").style.display="inline";
+    }
+
+   function dropDown()
+   {
+    document.getElementById("categories").style.display="block";
+   }
+
+</script>
+
+    
+</body>
+
+</html>
